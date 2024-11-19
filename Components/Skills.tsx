@@ -17,7 +17,7 @@ const Skills = () => {
             <div>
                 <SkillItems title="Next Js Developer" year="2020 - 2021"/>
                 <SkillItems title="Node Js Developer" year="2022 - 2024"/>
-                <SkillLanguages skill1="Next Js" skill2="React Js" skill3="TypeScript" level1="w-[85%]" level2="w-[900%]" level3="w-[95%]"/>
+                <SkillLanguages skill1="Next Js" skill2="React Js" skill3="TypeScript" level1="w-[85%]" level2="w-[90%]" level3="w-[95%]"/>
             </div>
         </div>
     </div>
