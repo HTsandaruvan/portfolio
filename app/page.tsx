@@ -5,6 +5,7 @@ import Nav from "@/Components/Nav";
 import React, { useState } from "react";
 import About from "@/Components/About";
 import Services from "@/Components/Services";
+import Skills from "@/Components/Skills";
 
 const HomePage =() => {
   
@@ -26,6 +27,8 @@ const HomePage =() => {
 
       {/*  Services Section */}
         <Services/>
+
+        <Skills/>
       </div>
        
        
