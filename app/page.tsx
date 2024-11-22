@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import Hero from "@/Components/Hero";
 import MobileNav from "@/Components/MobileNav";
 import Nav from "@/Components/Nav";
@@ -7,9 +7,10 @@ import About from "@/Components/About";
 import Services from "@/Components/Services";
 import Skills from "@/Components/Skills";
 import Project from "@/Components/Project";
+import Certificates from "@/Components/Certificates";
 
 
-const HomePage =() => {
+const Home =() => {
   
   const [nav,setNav] = useState(false);
   const openNav = ()=>setNav(true);
@@ -32,6 +33,7 @@ const HomePage =() => {
 
         <Skills/>
        <Project/>
+       <Certificates/>
         
       </div>
        
@@ -40,4 +42,4 @@ const HomePage =() => {
     </div>
   );
 }
-export default HomePage
+export default Home

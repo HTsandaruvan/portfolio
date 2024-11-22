@@ -2,10 +2,11 @@ import React from 'react'
 interface Props{
     title: string
     year:string
+    description:string
 }
-const SkillItems = ({title,year} :Props) => {
+const SkillItems = ({title,year,description} :Props) => {
   return (
-    <div className='mb-[4rem] md:mb-[8rem]'>
+    <div className='mb-[4rem] md:mb-[8rem] items-center'>
         <span className='px-[2rem] text-[#55e6a5] py-[0.9rem] font-bold text-[18px] border-[2px] border-[#55e6a5]'>
             {year}
         </span>
@@ -13,9 +14,7 @@ const SkillItems = ({title,year} :Props) => {
             {title}
         </h1>
         <p className='text-[#aaaaaa] font-normal w-[80%] text-[17px] opacity-80'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Quibusdam impedit voluptatum voluptas, corporis cumque at 
-            maiores quod? Non et aspernatur eaque illum id beatae fugiat voluptas quasi, iusto, ab facilis.
+            {description}
         </p>
     </div>
   )
