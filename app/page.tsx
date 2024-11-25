@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Hero from "@/Components/Hero";
 import MobileNav from "@/Components/MobileNav";
 import Nav from "@/Components/Nav";
@@ -9,37 +9,32 @@ import Skills from "@/Components/Skills";
 import Project from "@/Components/Project";
 import Certificates from "@/Components/Certificates";
 
-
-const Home =() => {
-  
-  const [nav,setNav] = useState(false);
-  const openNav = ()=>setNav(true);
-  const closeNav = () =>setNav(false);
+const Home = () => {
+  const [nav, setNav] = useState(false);
+  const openNav = () => setNav(true);
+  const closeNav = () => setNav(false);
   return (
     <div className="overflow-x-hidden">
       <div>
         {/*  Navbar */}
-        <MobileNav nav= {nav} closeNav = {closeNav}/>
-        <Nav openNav = {openNav}/>
+        <MobileNav nav={nav} closeNav={closeNav} />
+        <Nav openNav={openNav} />
         {/*  Hero Section */}
-        <Hero/>
+        <Hero />
       </div>
       <div className={"relative z-[30]"}>
-      {/*  About Section */}
-        <About/>
+        {/*  About Section */}
+        <About />
 
-      {/*  Services Section */}
-        <Services/>
+        {/*  Services Section */}
+        <Services />
 
-        <Skills/>
-       <Project/>
-       <Certificates/>
-        
+        <Skills />
+        <Project />
+
+        <Certificates />
       </div>
-       
-       
-      
     </div>
   );
-}
-export default Home
+};
+export default Home;

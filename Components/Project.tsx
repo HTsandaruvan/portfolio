@@ -1,11 +1,15 @@
 
 "use client"
-import React, { useEffect } from 'react'
-import Image from 'next/image'
+import React, { useEffect} from 'react'
+
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import Image from 'next/image';
+
 
 const Project = () => {
+    
+
     useEffect(() => {
         AOS.init();
         AOS.refresh();
